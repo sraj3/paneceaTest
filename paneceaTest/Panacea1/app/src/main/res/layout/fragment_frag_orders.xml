@@ -1,0 +1,59 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sugandh.panacea1.fragOrders">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/spinner12"
+                android:layout_centerHorizontal="true"
+                android:spinnerMode="dropdown"
+                android:entries="@array/serviceName_array"
+                android:prompt="@string/spinner_title" />
+
+            <TextView
+                android:text="Save your address first"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/textView05"
+                android:layout_alignParentStart="true" />
+            <Button
+                android:text="Button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/button011"
+                android:onClick="findUsp"/>
+        </LinearLayout>
+
+        <Button
+            android:text="Get Location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonLocation"
+            android:onClick="getLocation"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="11dp" />
+
+        <Button
+            android:text="Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonLocation"
+            android:layout_alignStart="@+id/buttonLocation"
+            android:id="@+id/button11"
+            android:layout_alignEnd="@+id/buttonLocation"
+            android:onClick="search"/>
+    </RelativeLayout>
+</FrameLayout>
